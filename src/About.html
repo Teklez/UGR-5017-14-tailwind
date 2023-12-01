@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/grid-style.css">
 </head>
-<body>
-    <header>
-        <h3>ZEMENU</h3>
-        <nav>
-            <ul>
+<body class="about-body">
+    <header class="header">
+        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
+        <nav class="main-navbar" id="main-navbar">
+            <h2 class="logo">ZEMENU</h2>
+            <ul class="main-nav-list"> 
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Projects.html">Projects</a></li>
@@ -17,8 +20,8 @@
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
+        <nav class="main-navbar">
+            <ul class="secondary-nav-list">
                 <li><a href="#me">Me</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -26,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="about-main main">
         <section id="me">
             <h2>Me</h2>
             <img src="images/me.jpg" alt="me" width="50" height="50">
@@ -95,7 +98,7 @@
             <div>
                 <div>
                     <p><q>I had an amazing experience with this product. It exceeded my expectations!</q></p>
-                    <img src="images/customer1.jpg" alt="Customer 1" >
+                    <img src="images/customer1.jpg" alt="Customer 1" class="customer-picture">
                     <p>- John Doe</p>
                     <p>Product Enthusiast</p>
                 </div>
@@ -103,7 +106,7 @@
             <div>
                 <div>
                     <p><q>The service provided was exceptional. I highly recommend it to everyone.</q></p>
-                    <img src="images/customer2.jpg" alt="Customer 2" >
+                    <img src="images/customer2.jpg" alt="Customer 2" class="customer-picture">
                     <p>- Jane Smith</p>
                     <p>Service Advocate</p>
                 </div>
@@ -112,7 +115,7 @@
             <div>
                 <div>
                     <p><q>This product changed the way I work. I'm grateful for such innovation.</q> </p>
-                    <img src="images/customer3.jpg" alt="Customer 3" >
+                    <img src="images/customer3.jpg" alt="Customer 3" class="customer-picture">
                     <p>- Alex Johnson</p>
                     <p>Innovative Solutions Seeker</p>
                 </div>
@@ -120,9 +123,9 @@
         </section>
     </main>
     <br>
-    <footer>
+    <footer class="footer about-footer">
         <p>&copy; 2023 Copyright</p>
-        <button>Contact me</button>
+        <a href="Contact.html" class="call-to">Contact me</a>
     </footer>
 </body>
 </html>
