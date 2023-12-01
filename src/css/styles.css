@@ -1,0 +1,323 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.main-navbar {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    overflow: hidden;
+
+}
+
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navbar ul li {
+    margin-right: 20px;
+}
+
+.main-navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.main-navbar ul li a::after {
+    content: '';
+    display:block;
+    width:0;
+    height:3px;
+    background: aquamarine;
+    transition: 0.5s;
+}
+
+.main-navbar ul li a:hover::after {
+    width:100%;
+}
+
+.home-main {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.main{
+    margin-top: 15em;
+}
+
+.main-text p{
+    margin-left:2em;
+}
+
+.profile-description{
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+
+}
+.call-to {
+    display: inline-block;
+    padding: 0.8rem 1.3rem;
+    margin-top: 1.9rem; 
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.call-to:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1.2rem;
+    justify-content: space-around;
+    display: flex;
+    align-items: baseline;
+    width: 100vw;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.footer ul li a img {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer ul li a img:hover {
+    transform: scale(1.2);
+}
+.icon {
+    width: 2em;
+    height: 2em;
+}
+
+
+
+/* ABOUT */
+
+/* ME */
+.about-body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+
+.customer-picture {
+    width:3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+/* TESTIMONIALS */
+
+#testimonial {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+ 
+}
+
+
+
+
+
+
+/* PROJECTS */
+
+.projects-main {
+    margin-top: 7em;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    margin: 0.7rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* INTERESTS */
+
+
+.interests-main {
+    margin-top: 7em;
+}
+
+
+.interests-img {
+    width:40vw;
+    height: 70vh;
+
+}
+
+
+.musics  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em 0 4em 0;
+    align-content: center;
+}
+.sports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em 0 4em 0;
+    align-content: center;
+
+
+}
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em 0 4em 0;
+    align-content: center;
+
+}
+
+
+
+/* CONTACT */
+
+.contact-main {
+    margin-top: 7em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* HUMBRUGER MENU  */
+
+.humburger-icon {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-navbar ul {
+        display: none;
+    }
+
+    .humburger-icon {
+        display: block;
+        position:absolute;
+        top: 1.3rem;
+        left: 85%;
+        
+    }
+
+    .main-navbar ul.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .main-navbar ul.show li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-navbar ul.show li a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .main-navbar ul.show li a::after {
+        display: none;
+    }
+
+    .main-navbar ul.show li a:hover {
+        background-color: #111;
+    }
+}
+
