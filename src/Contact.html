@@ -1,71 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/grid-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
-        <nav class="main-navbar" id="main-navbar">
-            <h2 class="logo">ZEMENU</h2>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">ZEMENU</h2>
+        <ul id="menu-list">
+          <li><a href="Home.html" class="menu-links">Home</a></li>
+          <li><a href="About.html" class="menu-links">About</a></li>
+          <li><a href="Projects.html" class="menu-links">Projects</a></li>
+          <li><a href="Interests.html" class="menu-links">Interests</a></li>
+          <li><a href="Contact.html" class="menu-links">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
     </header>
     <main class="contact-main">
-            <h3>Reach Out</h3>
-            <div>
-            <img src="images/location.png" alt="" class="icon">
-            <h4>Location:</h4>
-            <address>Addis Ababa, Ethiopia</address>
-            <img src="images/email.png" alt="" class="icon">
-            <h4>Email:</h4>
-            <p>zemenumekiria@gmail.com</p>
-            <img src="images/phone.png" alt="" class="icon">
-            <h4>Phone:</h4>
-            <p>+251 911 111 111</p>
+      <section class="container">
+        <h3>Reach Out</h3>
+        <div class="contact card">
+          <div class="contact-area">
+            <div class="contact-info location">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Location:</h4>
+              <p>Addis Ababa, Ethiopia</p>
+            </div>
+
+            <div class="contact-info email">
+              <i class="fa-regular fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>zemenumekiria@gmail.com</p>
+            </div>
+            <div class="contact-info phone">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h4>Phone:</h4>
+              <p>+251 911 111 111</p>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            ></iframe>
+          </div>
+
+          <div class="contact-form">
+            <div class="form">
+              <form>
+                <div class="name-email">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name.."
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your email.."
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject.."
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="subject"
+                    placeholder="Write something.."
+                    style="height: 200px"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit" class="submit" >
+              </form>
+            </div>
+          </div>
         </div>
-        <iframe src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-        <div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject..">
-                <label for="message">Message:</label>
-                <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+      </section>
     </main>
     <br>
+    <hr>
     <footer class="footer contact-footer">
-        <p>&copy; Copyright 2023</p>
-        <ul>
-            <li>
-                <a href=""><img src="images/facebook.png" alt="facebook" class="icon"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/instagram.png" alt="instagram" class="icon"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/linkedin.png" alt="linkedin" class="icon"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/twitter.png" alt="twitter" class="icon"> </a>
-            </li>
-        </ul>
-    </footer>    
-</body>
+      <p>&copy; Copyright 2023</p>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i> </a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-x-twitter"></i> </a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>

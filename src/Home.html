@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Home</title>
-    <!-- <link  rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/grid-style.css">
-</head>
-<body class="home-body">
+    <link rel="stylesheet" href="css/styles.css" >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="home-body">
     <header class="header">
-        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
-        <nav class="main-navbar" id="main-navbar">
-            <h2 class="logo">ZEMENU</h2>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">ZEMENU</h2>
+        <ul class="menu-list" id="menu-list">
+          <li><a href="Home.html" class="menu-links">Home</a></li>
+          <li><a href="About.html" class="menu-links">About</a></li>
+          <li><a href="Projects.html" class="menu-links">Projects</a></li>
+          <li><a href="Interests.html" class="menu-links">Interests</a></li>
+          <li><a href="Contact.html" class="menu-links">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
     </header>
     <main class="home-main main">
-        <div class="main-text">
-            <img src="images/zemenu1.jpg" alt="me" id="profile-image">       
-            <div class="profile-description">
-                <h1>I am Zemenu Mekuria</h1>
-                <p>Full stack and android developer</p>
-                
-            </div>
+      <div class="home-container">
+        <div class="profile-description">
+            <h1>I am Zemenu Mekuria</h1>
+            <p>Full stack and android developer</p>
+          </div>
         </div>
+      <div class="home-call">
+        <a href="About.html" class="call-to home-call-to">Know more</a>
+      </div>
     </main>
+    <hr>
     <footer class="footer home-footer">
-        <p>&copy; Copyright  2023</p>
-        <a href="About.html" class="call-to">Know more</a>
-
-        <ul>
-            <li><a href=""><img src="images/facebook.png" alt="facebook" class="icon"></a></li>
-            <li><a href=""><img src="images/instagram.png" alt="instagram" class="icon"></a></li>
-            <li><a href=""><img src="images/linkedin.png" alt="linkedin" class="icon"></a></li>
-            <li><a href=""><img src="images/twitter.png" alt="twitter" class="icon"></a></li>
-        </ul>
+      <p>&copy; Copyright 2023</p>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i> </a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-x-twitter"></i> </a>
+        </li>
+      </ul>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>

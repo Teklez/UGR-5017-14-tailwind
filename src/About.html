@@ -1,131 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>About</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/grid-style.css">
-</head>
-<body class="about-body">
+    <link rel="stylesheet" href="css/styles.css" >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="about-body">
     <header class="header">
-        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
-        <nav class="main-navbar" id="main-navbar">
-            <h2 class="logo">ZEMENU</h2>
-            <ul class="main-nav-list"> 
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="main-navbar">
-            <ul class="secondary-nav-list">
-                <li><a href="#me">Me</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-            </ul>
-        </nav>
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">ZEMENU</h2>
+        <ul class="menu-list" id="menu-list">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Interests.html">Interests</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
     </header>
     <main class="about-main main">
-        <section id="me">
+      <section id="me" class="me container">
+        <div class="me-container card">
+          <div class="profile">
+            <img
+              src="images/me.jpg"
+              alt="my-img"
+              class="my-img"
+            >
+            <div class="profile-info">
+              <p><span>Name:</span>Zemenu Mekuria</p>
+              <p><span>Profile:</span>Full Stack Developer</p>
+              <p><span>Degree:</span>Bachelor's Degree</p>
+              <p><span>Email:</span>zemenumekiria@gmail.com</p>
+            </div>
+          </div>
+          <div class="bio">
             <h2>Me</h2>
-            <img src="images/me.jpg" alt="me" width="50" height="50">
-            <div>
-                <p><span>Name:</span><span>Zemenu Mekuria</span></p>
-                <p><span>Profile:</span><span>Full Stack Developer</span></p>
-                <p><span>Degree:</span><span>Bachelor's Degree</span></p>
-                <p><span>Email:</span><span>zemenumekiria@gmail.com</span></p>
-            </div>
-            <p>My name is Zemenu Mekuria. I am a student at Addis Ababa University. 
-                I am a 3rd year student in the department of Software Engineering. I am from Ethiopia. 
-                I am 21 years old. I am a hardworking person. I am a person who can work under pressure. 
-                I am a person who can work in a team. I am a person who can work with different people.</p>
-        </section>
+            <p>
+              My name is Zemenu Mekuria. I am a student at Addis Ababa
+              University. I am a 3rd year student in the department of Software
+              Engineering. I am from Ethiopia. I am 21 years old. I am a
+              hardworking person. I am a person who can work under pressure. I
+              am a person who can work in a team. I am a person who can work
+              with different people.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div>
-                <p><span>HTML</span><span> 50%</span></p>
-                <p><span>CSS</span><span> 60%</span></p>
-                <p><span>JavaScript</span><span> 50%</span></p>
-                <p><span>java</span><span> 60%</span></p>
-                <p><span>Python</span><span> 80%</span></p>
-            </div>
-        </section>
+      <section id="skills" class="skills container">
+        <div class="title">
+          <h2>Skills</h2>
+        </div>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos, 
-                aliquid ipsa veritatis quaerat aspernatur ab cupiditate odit nesciunt commodi itaque voluptatibus 
-                quia animi molestias pariatur qui sed sit mollitia.</p>
-            <article>
-                <div>
-                    <h3>Summary</h3>
-                    <h4>Zemenu Mekuria</h4>
-                    <p>My name is Zemenu Mekuria. I am a student at Addis Ababa University. 
-                        I am a 3rd year student in the department of Software Engineering. I am from Ethiopia. 
-                        I am 21 years old. I am a hardworking person. I am a person who can work under pressure. 
-                        I am a person who can work in a team. I am a person who can work with different people.</p>
-                    <ul>
-                        <li><span>Age:</span><span>21</span></li>
-                        <li><span>Address:</span><span>Addis Ababa</span></li>
-                        <li><span>Email:</span><span>zemenumekiria@gmail.com</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Education</h3>
-                    <h4>Bachelor of Science in Software Engineering</h4>
-                    <h5> 2021 - 2026</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Repellat reiciendis velit asperiores, dignissimos, cumque dolorum voluptas </p>
-                </div>
-                <div>
-                    <h3>Professional Experience</h3>
-                    <h4>Full Stack Developer</h4>
-                    <h5> 2024 - present</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Repellat reiciendis velit asperiores, dignissimos, cumque dolorum voluptas </p>
-                </div>
-            </article>
+        <div class="row card">
+          <div class="item">
+            <span class="skill"
+              >html
+              <i class="val">75%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar html"></div>
+            </div>
+          </div>
 
-        </section>
+          <div class="item">
+            <span class="skill"
+              >Flask
+              <i class="val">30%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar flask"></div>
+            </div>
+          </div>
 
-        <section id="testimonial">
-            <h2>Testimonial</h2>
-            <div>
-                <div>
-                    <p><q>I had an amazing experience with this product. It exceeded my expectations!</q></p>
-                    <img src="images/customer1.jpg" alt="Customer 1" class="customer-picture">
-                    <p>- John Doe</p>
-                    <p>Product Enthusiast</p>
-                </div>
+          <div class="item">
+            <span class="skill"
+              >Css
+              <i class="val">60%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar css"></div>
             </div>
-            <div>
-                <div>
-                    <p><q>The service provided was exceptional. I highly recommend it to everyone.</q></p>
-                    <img src="images/customer2.jpg" alt="Customer 2" class="customer-picture">
-                    <p>- Jane Smith</p>
-                    <p>Service Advocate</p>
-                </div>
+          </div>
+
+          <div class="item">
+            <span class="skill"
+              >Bootstrap
+              <i class="val">50%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar bootstrap"></div>
             </div>
-    
-            <div>
-                <div>
-                    <p><q>This product changed the way I work. I'm grateful for such innovation.</q> </p>
-                    <img src="images/customer3.jpg" alt="Customer 3" class="customer-picture">
-                    <p>- Alex Johnson</p>
-                    <p>Innovative Solutions Seeker</p>
-                </div>
+          </div>
+
+          <div class="item">
+            <span class="skill"
+              >JavaScript
+              <i class="val">75%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar js"></div>
             </div>
-        </section>
+          </div>
+
+          <div class="item">
+            <span class="skill"
+              >Java
+              <i class="val">40%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar java"></div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="skill"
+              >Python
+              <i class="val">50%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar python"></div>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="skill"
+              >React
+              <i class="val">40%</i>
+            </span>
+            <div class="progress">
+              <div class="progress-bar react"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume container">
+        <h2>Resume</h2>
+        <div class="row card">
+          <div class="col">
+            <div class="title">
+              <h3>Education</h3>
+            </div>
+            <div class="contents">
+              <div class="box">
+                <h4>2022 - 2023</h4>
+                <h5>Python cs-50</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+              <div class="box">
+                <h4>2023 - present</h4>
+                <h5>FreeCodeCamp full-stack</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2021 - 2026</h4>
+                <h5>Bachelor of Science</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="title">
+              <h3>Professional Experience</h3>
+            </div>
+            <div class="contents">
+              <div class="box">
+                <h4>2021 - 2026</h4>
+                <h5>Front-end developer</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+              <div class="box">
+                <h4>2021 - 2026</h4>
+                <h5>Full-stack developer</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2021 - 2026</h4>
+                <h5>Full-stack developer</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="testimonial container">
+        <h2>Testimonial</h2>
+        <div class="testimonial-content card">
+          <div class="col">
+            <div class="single-testimonial">
+              <p>
+                <i class="fa-solid fa-quote-left" style="color: #b6bbc4"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum quia impedit adipisci unde ex non laborum magnam,
+                quaerat fugiat recusandae reiciendis dignissimos totam cumque!
+                Possimus eum illum obcaecati facilis et.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+
+              <div class="client-info">
+                <div class="client-pic">
+                  <img
+                    src="images/customer1.jpg"
+                    alt="Customer 1"
+                    class="customer-picture"
+                  >
+                </div>
+                <div class="client-detail">
+                  <h6>John Doe</h6>
+                  <span>Product Enthusiast</span>
+                </div>
+              </div>
+            </div>
+            <div class="single-testimonial">
+              <p>
+                <i class="fa-solid fa-quote-left" style="color: #b6bbc4"></i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                harum asperiores, impedit quae ipsum atque ratione itaque,
+                delectus vero laboriosam saepe, nam facilis assumenda odit
+                placeat error necessitatibus quisquam dolores?
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+              <div class="client-info">
+                <div class="client-pic">
+                  <img
+                    src="images/customer2.jpg"
+                    alt="Customer 2"
+                    class="customer-picture"
+                  >
+                </div>
+                <div class="client-detail">
+                  <h6>Jane Smith</h6>
+                  <span>Service Advocate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="single-testimonial">
+              <p>
+                <i class="fa-solid fa-quote-left" style="color: #b6bbc4"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                natus tempore ratione omnis enim ab ipsam iste minus
+                perspiciatis, fugiat mollitia. Blanditiis error, facere
+                perspiciatis fuga necessitatibus rem recusandae iusto.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+
+              <div class="client-info">
+                <div class="client-pic">
+                  <img
+                    src="images/customer3.jpg"
+                    alt="Customer 3"
+                    class="customer-picture"
+                  >
+                </div>
+                <div class="client-detail">
+                  <h6>Alex Johnson</h6>
+                  <span>Innovative Solutions Seeker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-testimonial">
+              <p>
+                <i class="fa-solid fa-quote-left" style="color: #b6bbc4"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                natus tempore ratione omnis enim ab ipsam iste minus
+                perspiciatis, fugiat mollitia. Blanditiis error, facere
+                perspiciatis fuga necessitatibus rem recusandae iusto.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+
+              <div class="client-info">
+                <div class="client-pic">
+                  <img
+                    src="images/customer3.jpg"
+                    alt="Customer 3"
+                    class="customer-picture"
+                  >
+                </div>
+                <div class="client-detail">
+                  <h6>Alex Johnson</h6>
+                  <span>Innovative Solutions Seeker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <br>
+    <hr>
     <footer class="footer about-footer">
-        <p>&copy; 2023 Copyright</p>
-        <a href="Contact.html" class="call-to">Contact me</a>
+      <p>&copy; Copyright 2023</p>
+      <a href="Contact.html" class="call-to">Contact me</a>
     </footer>
-</body>
+
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>

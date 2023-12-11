@@ -1,98 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Interests</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/grid-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
-        <nav class="main-navbar" id="main-navbar">
-            <h2 class="logo">ZEMENU</h2>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="interests-main">
-        <section >
-            <h3>Musics</h3>
-            <div class="musics">
-                <div>
-                    <audio controls>
-                        <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                    </audio>
-                </div>
-
-                <div>
-                    <audio controls>
-                        <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                    </audio>
-                </div>
-
-                <div>
-                    <audio controls>
-                        <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                    </audio>
-                </div>
-            </div>
-        </section>
-
-        <section >
-            <h3>Sports</h3>
-            <div class="sports">
-            <div>
-                <img src="images/football.jpg" alt="football" class="interests-img">
-            </div>
-            <div>
-                <img src="images/basketball.jpg" alt="basketball"  class="interests-img">
-            </div>
-            <div>
-                <img src="images/cycling.jpg" alt="cycling"  class="interests-img">
-
-            </div>
-        </div>
-        </section>
-
-        <section >
-            <h3 >Movies</h3>
-            <div class="movies">
-                <div>
-                    <video  controls>
-                        <source src="https://www.youtube.com/watch?v=uYPbbksJxIg" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                </div>
-                <div>
-                    <video  controls>
-                        <source src="https://www.youtube.com/watch?v=PLl99DlL6b4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                </div>
-                <div>
-                    <video  controls>
-                        <source src="https://www.youtube.com/watch?v=EajIlG_OCvw" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                </div>
-        </div>
-        </section>
-        
-    </main>
-    <br>
-    <footer class="footer interets-footer">
-        <p>&copy; Copyright 2023</p>
-        <ul>
-            <li><a href="#"><img src="images/linkedin.png" alt="linkedin" class="icon"></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt="twitter" class="icon"></a></li>
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">ZEMENU</h2>
+        <ul class="menu-list" id="menu-list">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Interests.html">Interests</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
+    </header>
+    <main class="interests-main container">
+      <div class="interests">
+        <div class="music-movie">
+          <div>
+            <h3>Musics</h3>
+
+            <div class="musics">
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="https://www.youtube.com/watch?v=K2yA8ZkstG4"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="https://www.youtube.com/watch?v=K2yA8ZkstG4"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="https://www.youtube.com/watch?v=K2yA8ZkstG4"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Movies</h3>
+            <div class="movies-container">
+              <div class="movie">
+                <video controls>
+                  <source
+                    src="https://youtu.be/uYPbbksJxIg?si=VXn-b1CnLnOlcYb7"
+                    type="video/mp4"
+                  >
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+              <div class="movie">
+                <video controls>
+                  <source
+                    src="https://www.youtube.com/watch?v=PLl99DlL6b4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+              <div class="movie">
+                <video controls>
+                  <source
+                    src="https://www.youtube.com/watch?v=EajIlG_OCvw"
+                    type="video/mp4"
+                  >
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Sports</h3>
+          <div class="sports-container">
+            <div class="sport">
+              <img
+                src="images/football.jpg"
+                alt="football"
+                class="interests-img"
+              >
+            </div>
+            <div class="sport">
+              <img
+                src="images/basketball.jpg"
+                alt="basketball"
+                class="interests-img"
+              >
+            </div>
+            <div class="sport">
+              <img
+                src="images/cycling.jpg"
+                alt="cycling"
+                class="interests-img"
+              >
+            </div>
+            <a href="#Projects" class="call-to">See Projects</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr>
+    <footer class="footer interets-footer">
+      <p>&copy; Copyright 2023</p>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+      </ul>
     </footer>
-</body>
+
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>
