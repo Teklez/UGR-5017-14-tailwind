@@ -4,60 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/grid-style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8ca52177a5.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header class="header">
-        <a id="humburger-menu" href="#"><img class="humburger-icon" src="images/humburger.jpg" alt="Menu"></a>
-        <nav class="main-navbar" id="main-navbar">
+        <nav class="main-navbar container" id="main-navbar">
             <h2 class="logo">ZEMENU</h2>
-            <ul>
+            <ul class="menu-list" id="menu-list">
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Projects.html">Projects</a></li>
                 <li><a href="Interests.html">Interests</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
+            <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
         </nav>
     </header>
     <main class="projects-main">
-        <h3>So far</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odit expedita animi vero? Molestias optio harum minus
-             fuga numquam praesentium nisi dolor dolorem minima doloribus, inventore similique, quos incidunt necessitatibus.</p>
-        <div class="projects">
-            <div>
-                <figure>
-                    <a href="https://github.com/Teklez/password-manager"><img src="images/project1.jpg" alt="project1" class="project-img"></a>
-                    <figcaption>project1</figcaption>
-                </figure>
+        <section class="projects container" id="projects">
+            <div class="main-text">
+                <h3>So far</h3>
+                <p>worked on</p>
             </div>
-            <div>
-                <figure>
-                    <a href="https://github.com/Teklez/pomodoro"><img src="images/project2.jpg" alt="project2"  class="project-img"></a>
-                    <figcaption>project2</figcaption>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <a href="https://github.com/Teklez/snake-game"><img src="images/project3.jpg" alt="project3"  class="project-img"></a>
-                    <figcaption>project3</figcaption>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <a href="https://github.com/Teklez/pong-game"><img src="images/project4.jpg" alt="project4"  class="project-img"></a>
-                    <figcaption>project4</figcaption>
-                </figure>
-            </div>
-        </div>
+    
+            <div class="project-content">
+                <div class="row">
+                   <img class="project-img" src="images/project1.jpg" alt="projcet1"> 
+                
+                <div class="layer">
+                    <h5>Password manager</h5>
+                    <p>Best widget at hand for handling passwords</p>
+                    <a href="https://github.com/Teklez/password-manager"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                </div>
 
+                
+                <div class="row">
+                    <img class="project-img" src="images/project2.jpg" alt="project2">
+                    <div class="layer">
+                        <h5>Pomodoro</h5>
+                        <p>Best widget at hand for handling passwords</p>
+                        <a href="https://github.com/Teklez/pomodoro"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img class="project-img" src="images/project3.jpg" alt="project3">
+                    <div class="layer">
+                        <h5>Snake game</h5>
+                        <p>Best widget at hand for handling passwords</p>
+                        <a href="https://github.com/Teklez/snake-game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img class="project-img" src="images/project4.jpg" alt="project4">
+                    <div class="layer">
+                        <h5>Pong game</h5>
+                        <p>Best widget at hand for handling passwords</p>
+                        <a href="https://github.com/Teklez/pong-game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img class="project-img" src="images/project5.jpg" alt="project5">
+                    <div class="layer">
+                        <h5>Pong game</h5>
+                        <p>Best widget at hand for handling passwords</p>
+                        <a href="https://github.com/Teklez/pong-game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img class="project-img" src="images/project6.jpg" alt="">
+                    <div class="layer">
+                        <h5>Pong game</h5>
+                        <p>Best widget at hand for handling passwords</p>
+                        <a href="https://github.com/Teklez/pong-game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
-    <br>
+    <hr>
     <footer class="footer project-footer">
         <p>&copy; Copyright 2023</p>
         <a href="Contact.html" class="call-to">Get in touch</a>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('menu-bars');
+        const menulist = document.getElementById("menu-list")
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menulist.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.manu-links').forEach((item) => {
+            item.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                menulist.classList.remove('active');
+            });
+        });
+    </script>
     
 </body>
 </html>
+
+
