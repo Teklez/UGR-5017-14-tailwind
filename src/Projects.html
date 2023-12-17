@@ -31,7 +31,7 @@
     
             <div class="project-content">
                 <div class="row">
-                   <img class="project-img" src="images/project1.jpg" alt="projcet1"> 
+                 <img class="project-img" src="images/project1.jpg" alt="projcet1"> 
                 
                 <div class="layer">
                     <h5>Password manager</h5>
@@ -95,21 +95,7 @@
         <a href="Contact.html" class="call-to">Get in touch</a>
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('menu-bars');
-        const menulist = document.getElementById("menu-list")
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            menulist.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.manu-links').forEach((item) => {
-            item.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                menulist.classList.remove('active');
-            });
-        });
+    <script src="index.js">
     </script>
     
 </body>

@@ -332,21 +332,8 @@
       <a href="Contact.html" class="call-to">Contact me</a>
     </footer>
 
-    <script>
-      const hamburger = document.getElementById("menu-bars");
-      const menulist = document.getElementById("menu-list");
+    <script src="index.js">
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        menulist.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".manu-links").forEach((item) => {
-        item.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          menulist.classList.remove("active");
-        });
-      });
     </script>
   </body>
 </html>
