@@ -1,68 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-</head>
-<body>
-    <header>
-        <h2>ZEMENU</h2>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="has-background-black has-text-light px-5">
+    <header class="pb-6">
+      <nav
+        class="navbar has-background-grey-dark is-fixed-top has-text-light px-4"
+        aria-label="main navigation "
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="Home.html">
+            <h3 class="title is-4 has-text-light">ZEMENU</h3>
+          </a>
+          <a
+            role="button"
+            class="navbar-burger has-text-light"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end has-background-grey-dark">
+            <a class="navbar-item has-text-light" href="Home.html">Home</a>
+            <a class="navbar-item has-text-light" href="About.html">About</a>
+            <a class="navbar-item has-text-light" href="Projects.html"
+              >Projects</a
+            >
+            <a class="navbar-item has-text-light" href="Interests.html"
+              >Interests</a
+            >
+            <a class="navbar-item has-text-light" href="Contact.html"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-        <div>
-            <h3>Reach Out</h3>
-            <img src="images/location.png" alt="" >
-            <h4>Location:</h4>
-            <address>Addis Ababa, Ethiopia</address>
-            <img src="images/email.png" alt="" >
-            <h4>Email:</h4>
-            <p>zemenumekiria@gmail.com</p>
-            <img src="images/phone.png" alt="" >
-            <h4>Phone:</h4>
-            <p>+251 911 111 111</p>
-        </div>
-        <iframe src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-        <div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject..">
-                <label for="message">Message:</label>
-                <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
+    <main class="hero is-fullheight pt-6">
+      <div>
+        <h3 class="is-size-3">Reach Out</h3>
+        <div class="pt-6 columns is-multiple">
+          <div class="column is-6">
+            <div class="columns is-multiline">
+              <div class="column is-half">
+                <div class="media">
+                  <div class="media-left">
+                    <span class="icon is-medium">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                  </div>
+                  <div class="media-content">
+                    <h4 class="title is-5 has-text-light">Location:</h4>
+                    <address>Addis Ababa, Ethiopia</address>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-left">
+                    <span class="icon is-medium">
+                      <i class="far fa-envelope"></i>
+                    </span>
+                  </div>
+                  <div class="media-content">
+                    <h4 class="title is-5 has-text-light">Email:</h4>
+                    <p>zemenumekiria@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-left">
+                    <span class="icon is-medium">
+                      <i class="fas fa-mobile-alt"></i>
+                    </span>
+                  </div>
+                  <div class="media-content">
+                    <h4 class="title is-5 has-text-light">Phone:</h4>
+                    <p>+251 911 111 111</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            ></iframe>
+          </div>
+          <div class="column is-6">
+            <form class="">
+              <div class="field">
+                <label class="label has-text-light">Name</label>
+                <div class="control">
+                  <input
+                    class="input has-background-grey-dark has-text-light"
+                    type="text"
+                    placeholder="Your name"
+                  >
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-light">Email</label>
+                <div class="control">
+                  <input
+                    class="input has-background-grey-dark has-text-light"
+                    type="email"
+                    placeholder="Your email"
+                  >
+                </div>
+              </div>
+              <div>
+                <label class="label has-text-light">Subject</label>
+                <div class="control">
+                  <input
+                    class="input has-background-grey-dark has-text-light"
+                    type="text"
+                    placeholder="Subject"
+                  >
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-light">Message</label>
+                <div class="control">
+                  <textarea
+                    class="textarea has-background-grey-dark has-text-light"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary has-background-grey-dark">
+                    Submit
+                  </button>
+                </div>
+              </div>
             </form>
+          </div>
         </div>
+      </div>
     </main>
-    <br>
-    <footer>
-        <p>&copy; Copyright 2023</p>
-        <ul>
-            <li>
-                <a href=""><img src="images/facebook.png" alt="facebook"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/instagram.png" alt="instagram"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/twitter.png" alt="twitter"> </a>
-            </li>
-        </ul>
-    </footer>    
-</body>
+    <hr class="has-background-grey">
+    <footer class="is-flex is-justify-content-space-between pb-3">
+      <p>&copy; Copyright 2023</p>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook-f has-text-light"></i></a>
+        <a href=""
+          ><i class="fa-brands fa-instagram ml-3 has-text-light"></i>
+        </a>
+        <a href=""
+          ><i class="fa-brands fa-linkedin-in ml-3 has-text-light"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-x-twitter ml-3 has-text-light"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
 </html>

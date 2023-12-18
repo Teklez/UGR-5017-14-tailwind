@@ -1,128 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>About</title>
-</head>
-<body>
-    <header>
-        <h3>ZEMENU</h3>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#me">Me</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-            </ul>
-        </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    >
+  </head>
+  <body class="has-background-black has-text-light px-5">
+    <header class="pb-6">
+      <nav
+        class="navbar has-background-grey-dark is-fixed-top has-text-light px-4"
+        aria-label="main navigation "
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="Home.html">
+            <h3 class="title is-4 has-text-light">ZEMENU</h3>
+          </a>
+          <a
+            role="button"
+            class="navbar-burger has-text-light"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end has-background-grey-dark">
+            <a class="navbar-item has-text-light" href="Home.html">Home</a>
+            <a class="navbar-item has-text-light" href="About.html">About</a>
+            <a class="navbar-item has-text-light" href="Projects.html"
+              >Projects</a
+            >
+            <a class="navbar-item has-text-light" href="Interests.html"
+              >Interests</a
+            >
+            <a class="navbar-item has-text-light" href="Contact.html"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-        <section id="me">
-            <h2>Me</h2>
-            <img src="images/me.jpg" alt="me" width="50" height="50">
-            <div>
-                <p><span>Name:</span><span>Zemenu Mekuria</span></p>
-                <p><span>Profile:</span><span>Full Stack Developer</span></p>
-                <p><span>Degree:</span><span>Bachelor's Degree</span></p>
-                <p><span>Email:</span><span>zemenumekiria@gmail.com</span></p>
+    <main class="pt-5">
+      <section id="me">
+        <div class="pt-3 columns is-multiple">
+          <div class="column is-6 is-flex is-flex-wrap-wrap">
+            <img
+              src="images/me.jpg"
+              alt="me"
+              width="50"
+              height="50"
+              class="mr-4"
+            >
+            <div class="">
+              <p>
+                <span class="is-size-5">Name: </span><span>Zemenu Mekuria</span>
+              </p>
+              <p>
+                <span class="is-size-5">Profile: </span
+                ><span>Full Stack Developer</span>
+              </p>
+              <p>
+                <span class="is-size-5">Degree: </span
+                ><span>Bachelor's Degree</span>
+              </p>
+              <p>
+                <span class="is-size-5">Email: </span
+                ><span>zemenumekiria@gmail.com</span>
+              </p>
             </div>
-            <p>My name is Zemenu Mekuria. I am a student at Addis Ababa University. 
-                I am a 3rd year student in the department of Software Engineering. I am from Ethiopia. 
-                I am 21 years old. I am a hardworking person. I am a person who can work under pressure. 
-                I am a person who can work in a team. I am a person who can work with different people.</p>
-        </section>
+          </div>
+          <div class="column is-6">
+            <h2 class="is-size-3">Me</h2>
+            <div class="content">
+              <p>
+                My name is Zemenu Mekuria. I am a student at Addis Ababa
+                University. I am a 3rd year student in the department of
+                Software Engineering. I am from Ethiopia. I am 21 years old. I
+                am a hardworking person. I am a person who can work under
+                pressure. I am a person who can work in a team. I am a person
+                who can work with different people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div>
-                <p><span>HTML</span><span> 50%</span></p>
-                <p><span>CSS</span><span> 60%</span></p>
-                <p><span>JavaScript</span><span> 50%</span></p>
-                <p><span>java</span><span> 60%</span></p>
-                <p><span>Python</span><span> 80%</span></p>
-            </div>
-        </section>
+      <section class="pt-6" id="skills">
+        <h2 class="is-size-3">Skills</h2>
+        <div class="pt-3 columns is-multiline">
+          <div class="column is-6">
+            <p>HTML</p>
+            <progress class="progress is-primary" value="85" max="100">
+              80%
+            </progress>
+          </div>
+          <div class="column is-6">
+            <p>CSS</p>
+            <progress class="progress is-primary" value="73" max="100">
+              80%
+            </progress>
+          </div>
+          <div class="column is-6">
+            <p>JAVASCRIPT</p>
+            <progress class="progress is-primary" value="65" max="100">
+              80%
+            </progress>
+          </div>
+          <div class="column is-6">
+            <p>NODE</p>
+            <progress class="progress is-primary" value="50" max="100">
+              80%
+            </progress>
+          </div>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos, 
-                aliquid ipsa veritatis quaerat aspernatur ab cupiditate odit nesciunt commodi itaque voluptatibus 
-                quia animi molestias pariatur qui sed sit mollitia.</p>
-            <article>
-                <div>
-                    <h3>Summary</h3>
-                    <h4>Zemenu Mekuria</h4>
-                    <p>My name is Zemenu Mekuria. I am a student at Addis Ababa University. 
-                        I am a 3rd year student in the department of Software Engineering. I am from Ethiopia. 
-                        I am 21 years old. I am a hardworking person. I am a person who can work under pressure. 
-                        I am a person who can work in a team. I am a person who can work with different people.</p>
-                    <ul>
-                        <li><span>Age:</span><span>21</span></li>
-                        <li><span>Address:</span><span>Addis Ababa</span></li>
-                        <li><span>Email:</span><span>zemenumekiria@gmail.com</span></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Education</h3>
-                    <h4>Bachelor of Science in Software Engineering</h4>
-                    <h5> 2021 - 2026</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Repellat reiciendis velit asperiores, dignissimos, cumque dolorum voluptas </p>
-                </div>
-                <div>
-                    <h3>Professional Experience</h3>
-                    <h4>Full Stack Developer</h4>
-                    <h5> 2024 - present</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Repellat reiciendis velit asperiores, dignissimos, cumque dolorum voluptas </p>
-                </div>
-            </article>
+          <div class="column is-6">
+            <p>JAVA</p>
+            <progress class="progress is-primary" value="60" max="100">
+              80%
+            </progress>
+          </div>
 
-        </section>
+          <div class="column is-6">
+            <p>PYTHON</p>
+            <progress class="progress is-primary" value="75" max="100">
+              80%
+            </progress>
+          </div>
+        </div>
+      </section>
 
-        <section id="testimonial">
-            <h2>Testimonial</h2>
-            <div>
-                <div>
-                    <p><q>I had an amazing experience with this product. It exceeded my expectations!</q></p>
-                    <img src="images/customer1.jpg" alt="Customer 1" >
-                    <p>- John Doe</p>
-                    <p>Product Enthusiast</p>
-                </div>
+      <section class="py-6" id="resume">
+        <h2 class="is-size-3">Resume</h2>
+        <div class="columns pt-3">
+          <div class="column">
+            <div class="box has-background-grey-dark has-text-light">
+              <h3 class="title is-4 has-text-light mb-6">Summary</h3>
+              <h4 class="subtitle is-5 has-text-light">Zemenu Mekuria</h4>
+              <p>
+                My name is Zemenu Mekuria. I am a student at Addis Ababa
+                University. I am a 3rd year student in the department of
+                Software Engineering. I am from Ethiopia. I am 21 years old. I
+                am a hardworking person. I am a person who can work under
+                pressure. I am a person who can work in a team. I am a person
+                who can work with different people.
+              </p>
             </div>
-            <div>
-                <div>
-                    <p><q>The service provided was exceptional. I highly recommend it to everyone.</q></p>
-                    <img src="images/customer2.jpg" alt="Customer 2" >
-                    <p>- Jane Smith</p>
-                    <p>Service Advocate</p>
-                </div>
+          </div>
+          <div class="column">
+            <div class="box has-background-grey-dark has-text-light">
+              <h3 class="title is-4 has-text-light">Education</h3>
+              <div class="mt-5">
+                <h4 class="subtitle is-5 has-text-light">
+                  Bachelor of Science in Software Engineering
+                </h4>
+                <h5 class="subtitle is-6 has-text-light mb-3 is-italic">
+                  2021 - 2026
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+              <div class="mt-5">
+                <h4 class="subtitle is-5 has-text-light">
+                  Bachelor of Science in Software Engineering
+                </h4>
+                <h5 class="subtitle is-6 has-text-light mb-3 is-italic">
+                  2021 - 2026
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <h4 class="subtitle is-5 has-text-light">
+                  Bachelor of Science in Software Engineering
+                </h4>
+                <h5 class="subtitle is-6 has-text-info-light mb-3 is-italic">
+                  2021 - 2026
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
             </div>
-    
-            <div>
-                <div>
-                    <p><q>This product changed the way I work. I'm grateful for such innovation.</q> </p>
-                    <img src="images/customer3.jpg" alt="Customer 3" >
-                    <p>- Alex Johnson</p>
-                    <p>Innovative Solutions Seeker</p>
-                </div>
+            <div class="box has-background-grey-dark has-text-light mt-4">
+              <h3 class="title is-4 has-text-light mb-6">
+                Professional Experience
+              </h3>
+              <div>
+                <h4 class="subtitle is-5 has-text-light">
+                  Full Stack Developer
+                </h4>
+                <h5 class="subtitle is-6 has-text-light mt-2 is-italic">
+                  2024 - present
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+              <div class="mt-5">
+                <h4 class="subtitle is-5 has-text-light">
+                  Full Stack Developer
+                </h4>
+                <h5 class="subtitle is-6 has-text-light mt-2 is-italic">
+                  2024 - present
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
+              <div class="mt-5">
+                <h4 class="subtitle is-5 has-text-light">
+                  Full Stack Developer
+                </h4>
+                <h5 class="subtitle is-6 has-text-light mt-2 is-italic">
+                  2024 - present
+                </h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat reiciendis velit asperiores, dignissimos, cumque
+                  dolorum voluptas
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="testimonial">
+        <h2 class="is-size-3">Testimonial</h2>
+        <div class="columns is-multiline pt-3">
+          <div class="column is-12">
+            <div class="columns is-multiline">
+              <div class="column is-6">
+                <div class="box has-background-grey-dark has-text-light">
+                  <div class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt totam asperiores eos aliquid tempore
+                          maiores quasi incidunt et hic velit omnis, libero quas
+                          consectetur odit laborum quis. Reiciendis, corrupti
+                          tempora.
+                          <br><br>
+                          <strong class="has-text-white-bis">Jon Doe</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-6">
+                <div class="box has-background-grey-dark has-text-light">
+                  <div class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt totam asperiores eos aliquid tempore
+                          maiores quasi incidunt et hic velit omnis, libero quas
+                          consectetur odit laborum quis. Reiciendis, corrupti
+                          tempora.
+                          <br><br>
+                          <strong class="has-text-white-bis"
+                            >Morgan Freeman</strong
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-12">
+            <div class="columns is-multiline">
+              <div class="column is-6">
+                <div class="box has-background-grey-dark has-text-light">
+                  <div class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt totam asperiores eos aliquid tempore
+                          maiores quasi incidunt et hic velit omnis, libero quas
+                          consectetur odit laborum quis. Reiciendis, corrupti
+                          tempora.
+                          <br><br>
+                          <strong class="has-text-white-bis"
+                            >Amanuel Tsehay</strong
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-6">
+                <div class="box has-background-grey-dark has-text-light">
+                  <div class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt totam asperiores eos aliquid tempore
+                          maiores quasi incidunt et hic velit omnis, libero quas
+                          consectetur odit laborum quis. Reiciendis, corrupti
+                          tempora.
+                          <br><br>
+                          <strong class="has-text-white-bis"
+                            >Yonathan Tenaye</strong
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <br>
-    <footer>
-        <p>&copy; 2023 Copyright</p>
-        <button>Contact me</button>
+    <hr class="has-background-grey" >
+    <footer class="is-flex is-justify-content-space-between pb-3">
+      <p>&copy; 2023 Copyright</p>
+      <button
+        class="has-background-dark has-text-light button is-primary"
+        onclick="window.location.href='Contact.html'"
+      >
+        Contact me
+      </button>
     </footer>
-</body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
