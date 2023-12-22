@@ -1,58 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-</head>
-<body>
-    <header>
-        <h2>ZEMENU</h2>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-black text-white px-5">
+    <header class="pb-10">
+      <nav class="bg-gray-900 fixed top-0 w-full">
+        <div
+          class="max-w-screen-xl mx-auto pr-6 flex items-center justify-between h-16"
+        >
+          <a href="Home.html" class="text-white text-4xl font-bold">ZEMENU</a>
+          <div class="flex items-center">
+            <button
+              class="button ml-4 md:hidden text-white focus:outline-none mobile-menu-button"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6H20M4 12H20M4 18H20"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex md:items-center md:space-x-4">
+            <a href="Home.html" class="text-white">Home</a>
+            <a href="About.html" class="text-white">About</a>
+            <a href="Projects.html" class="text-white">Projects</a>
+            <a href="Interests.html" class="text-white">Interests</a>
+            <a href="Contact.html" class="text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="hidden mobile-menu bg-gray-900 pt-10 fixed right-0 top-10 z-9 p-10"
+      >
+        <ul class="">
+          <li class="">
+            <a
+              href="Home.html"
+              class="block text-sm px-2 py-4 text-white hover:bg-green-500 font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="About.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="Projects.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="Interests.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Interests</a
+            >
+          </li>
+            <li>
+                <a
+                href="Contact.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Contact</a
+                >
+            </li>
+        </ul>
+      </div>
     </header>
-    <main>
-        <h3>So far</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odit expedita animi vero? Molestias optio harum minus
-             fuga numquam praesentium nisi dolor dolorem minima doloribus, inventore similique, quos incidunt necessitatibus.</p>
-        <div>
-            <figure>
-                <a href="https://github.com/Teklez/password-manager"><img src="images/project1.jpg" alt="project1" ></a>
-                <figcaption>project1</figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <a href="https://github.com/Teklez/pomodoro"><img src="images/project2.jpg" alt="project2"  ></a>
-                <figcaption>project2</figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <a href="https://github.com/Teklez/snake-game"><img src="images/project3.jpg" alt="project3"  ></a>
-                <figcaption>project3</figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <a href="https://github.com/Teklez/pong-game"><img src="images/project4.jpg" alt="project4"  ></a>
-                <figcaption>project4</figcaption>
-            </figure>
+    <main class="py-10">
+      <h3 class="text-3xl pb-3">So far</h3>
+      <p class="text-lg">Worked on</p>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-3"
+      >
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1">
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
         </div>
 
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1" >
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1">
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1" >
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1">
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <a href="https://github.com/Teklez/password-manager">
+            <img src="images/project1.jpg" alt="project1">
+          </a>
+          <div class="p-4">
+            <p class="text-white text-lg font-semibold">Password Manager</p>
+            <p class="text-gray-300">Handy widget to handle passwords.</p>
+          </div>
+        </div>
+      </div>
     </main>
-    <br>
-    <footer>
-        <p>&copy; Copyright 2023</p>
-        <button>Contact me</button>
+    <hr class="border-t border-gray-700">
+    <footer class="flex justify-between items-center py-3">
+      <p>&copy; Copyright 2023</p>
+      <button class="bg-gray-700 text-white px-4 py-2 rounded-md" onclick="window.location.href='Contact.html'">
+        Contact me
+      </button>
     </footer>
-    
-</body>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      function checkWindowSize() {
+        if (window.innerWidth >= 768) {
+          menu.classList.add("hidden");
+        }
+      }
+
+      window.addEventListener("resize", checkWindowSize);
+
+      window.addEventListener("load", checkWindowSize);
+    </script>
+  </body>
 </html>

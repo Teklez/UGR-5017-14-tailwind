@@ -1,68 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8ca52177a5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h2>ZEMENU</h2>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+<body class="bg-black text-white px-5">
+  <header class="pb-10">
+    <nav class="bg-gray-900 fixed top-0 w-full">
+        <div class="max-w-screen-xl mx-auto pr-6 flex items-center justify-between h-16">
+            <a href="Home.html" class="text-white text-4xl font-bold">ZEMENU</a>
+            <div class="flex items-center">
+              <div class="w-4"></div>
+              <button  class="ml-4 md:hidden text-white focus:outline-none button mobile-menu-button">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-4">
+
+              <a href="Home.html" class="text-white">Home</a>
+              <a href="About.html" class="text-white">About</a>
+              <a href="Projects.html" class="text-white">Projects</a>
+              <a href="Interests.html" class="text-white">Interests</a>
+              <a href="Contact.html" class="text-white">Contact</a>
+
+            </div>
+          </div>
+      </nav>
+
+      <div
+      class=" mobile-menu bg-gray-900 pt-10 fixed right-0 top-10 z-9 p-10"
+    >
+      <ul class="">
+        <li class="">
+          <a
+            href="Home.html"
+            class="block text-sm px-2 py-4 text-white hover:bg-green-500 font-semibold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="About.html"
+            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="Projects.html"
+            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="Interests.html"
+            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            >Interests</a
+          >
+        </li>
+          <li>
+              <a
+              href="Contact.html"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Contact</a
+              >
+          </li>
+      </ul>
+    </div>
+      
+  </header>
+  <main class="hero min-h-screen pt-10">
+    <div>
+      <h3 class="text-3xl">Reach Out</h3>
+      <div class="pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-            <h3>Reach Out</h3>
-            <img src="images/location.png" alt="" >
-            <h4>Location:</h4>
-            <address>Addis Ababa, Ethiopia</address>
-            <img src="images/email.png" alt="" >
-            <h4>Email:</h4>
-            <p>zemenumekiria@gmail.com</p>
-            <img src="images/phone.png" alt="" >
-            <h4>Phone:</h4>
-            <p>+251 911 111 111</p>
+          <div class="flex items-center mb-4">
+            <span class="text-2xl mr-2">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <div>
+              <h4 class="text-lg font-bold">Location:</h4>
+              <p>Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <span class="text-2xl mr-2">
+              <i class="far fa-envelope"></i>
+            </span>
+            <div>
+              <h4 class="text-lg font-bold">Email:</h4>
+              <p>zemenumekiria@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <span class="text-2xl mr-2">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+            <div>
+              <h4 class="text-lg font-bold">Phone:</h4>
+              <p>+251 911 111 111</p>
+            </div>
+          </div>
+          <iframe
+          src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        ></iframe>
         </div>
-        <iframe src="https://maps.google.com/maps?q=AA%20University%205%20Kilo%20Campus&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
         <div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject..">
-                <label for="message">Message:</label>
-                <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
-            </form>
+          <form class="">
+            <div class="mb-4">
+              <label class="block text-lg">Name</label>
+              <input class="w-full bg-gray-900 text-white rounded-md px-3 py-2" type="text" placeholder="Your name">
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-lg">Email</label>
+              <input class="w-full bg-gray-900 text-white rounded-md px-3 py-2" type="email" placeholder="Your email">
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-lg">Subject</label>
+              <input class="w-full bg-gray-900 text-white rounded-md px-3 py-2" type="text" placeholder="Subject">
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-lg">Message</label>
+              <textarea class="w-full bg-gray-900 text-white rounded-md px-3 py-2" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="mb-4">
+              <button class="bg-gray-700 text-white px-4 py-2 rounded-md">Submit</button>
+            </div>
+          </form>
         </div>
-    </main>
-    <br>
-    <footer>
-        <p>&copy; Copyright 2023</p>
-        <ul>
-            <li>
-                <a href=""><img src="images/facebook.png" alt="facebook"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/instagram.png" alt="instagram"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"> </a>
-            </li>
-            <li>
-                <a href=""><img src="images/twitter.png" alt="twitter"> </a>
-            </li>
-        </ul>
-    </footer>    
+      </div>
+    </div>
+  </main>
+  <hr class="bg-gray-900">
+  <footer class="flex justify-between py-3">
+    <p>&copy; Copyright 2023</p>
+    <div>
+      <a href=""><i class="fab fa-facebook-f text-white"></i></a>
+      <a href=""><i class="fab fa-instagram ml-3 text-white"></i></a>
+      <a href=""><i class="fab fa-linkedin-in ml-3 text-white"></i></a>
+      <a href=""><i class="fab fa-twitter ml-3 text-white"></i></a>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    function checkWindowSize() {
+      if (window.innerWidth >= 768) {
+        menu.classList.add("hidden");
+      }
+    }
+
+    window.addEventListener("resize", checkWindowSize);
+
+    window.addEventListener("load", checkWindowSize);
+  </script>
 </body>
 </html>

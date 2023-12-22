@@ -1,91 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interests</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ca52177a5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h2>ZEMENU</h2>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Interests.html">Interests</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+<body class="bg-black text-white px-5">
+    <header class="pb-10">
+        <nav class="bg-gray-900 fixed top-0 w-full z-10">
+            <div class="max-w-screen-xl mx-auto pr-6 flex items-center justify-between h-16">
+                <a href="Home.html" class="text-white text-4xl font-bold">ZEMENU</a>
+                <div class="flex items-center">
+                  <div class="w-4"></div>
+                  <button  class="ml-4 md:hidden text-white focus:outline-none button mobile-menu-button">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-4">
+    
+                  <a href="Home.html" class="text-white">Home</a>
+                  <a href="About.html" class="text-white">About</a>
+                  <a href="Projects.html" class="text-white">Projects</a>
+                  <a href="Interests.html" class="text-white">Interests</a>
+                  <a href="Contact.html" class="text-white">Contact</a>
+    
+                </div>
+              </div>
+          </nav>
+
+          <div
+          class="hidden mobile-menu bg-gray-900 pt-10 fixed right-0 top-10 z-9 p-10"
+        >
+          <ul class="">
+            <li class="">
+              <a
+                href="Home.html"
+                class="block text-sm px-2 py-4 text-white hover:bg-green-500 font-semibold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="About.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Projects.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="Interests.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Interests</a
+              >
+            </li>
+              <li>
+                  <a
+                  href="Contact.html"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  >Contact</a
+                  >
+              </li>
+          </ul>
+        </div>
+
     </header>
-    <main>
-        <section>
-            <h3>Musics</h3>
+    <main class="py-10">
+        <div class="grid md:grid-cols-2   gap-6">
             <div>
-                <audio controls>
-                    <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                </audio>
-            </div>
+                <div>
+                    <h3 class="text-3xl">Musics</h3>
+                    <div class="pt-3">
+                        <audio controls>
+                            <source src="your_audio_url_here" type="audio/ogg">
+                        </audio>
+                    </div>
 
-            <div>
-                <audio controls>
-                    <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                </audio>
-            </div>
+                    <div class="pt-3">
+                        <audio controls>
+                            <source src="your_audio_url_here" type="audio/ogg">
+                        </audio>
+                    </div>
 
-            <div>
-                <audio controls>
-                    <source src="https://www.youtube.com/watch?v=K2yA8ZkstG4" type="audio/ogg">
-                </audio>
-            </div>
-        </section>
+                    <div class="pt-3">
+                        <audio controls>
+                            <source src="your_audio_url_here" type="audio/ogg">
+                        </audio>
+                    </div>
 
-        <section>
-            <h3>Sports</h3>
-            <div>
-                <img src="images/football.jpg" alt="football" >
-            </div>
-            <div>
-                <img src="images/basketball.jpg" alt="basketball" >
-            </div>
-            <div>
-                <img src="images/cycling.jpg" alt="cycling" >
 
-            </div>
-        </section>
+                </div>
+                <div class="pt-4">
+                    <h3 class="text-3xl">Movies</h3>
+                    <div>
+                        <div class="pt-3">
+                           
+                            <video controls>
+                                <source src="your_video_url_here" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
 
-        <section>
-            <h3>Movies</h3>
-            <div>
-                <video width="400" controls>
-                    <source src="https://www.youtube.com/watch?v=uYPbbksJxIg" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-            <div>
-                <video width="400" controls>
-                    <source src="https://www.youtube.com/watch?v=PLl99DlL6b4" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-            <div>
-                <video width="400" controls>
-                    <source src="https://www.youtube.com/watch?v=EajIlG_OCvw" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-        </section>
+                        <div class="pt-3">
+                           
+                            <video controls>
+                                <source src="your_video_url_here" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
 
-        <button>Me</button>
-        
+                        <div class="pt-3">
+                           
+                            <video controls>
+                                <source src="your_video_url_here" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between">
+                <h3 class="text-3xl">Sports</h3>
+                <div class="py-6 ">
+                    <img src="images/football.jpg" alt="football">
+                    <img src="images/basketball.jpg" alt="basketball">
+                    <img src="images/cycling.jpg" alt="cycling">
+                </div>
+                <div class="">
+                    <button class="bg-gray-800 text-white px-10 py-1 rounded-md" onclick="window.location.href='About.html'">
+                        ME
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
-    <br>
-    <footer>
+    <hr class="bg-gray-800">
+    <footer class="flex justify-between py-3 px-4">
         <p>&copy; Copyright 2023</p>
-        <ul>
-            <li><a href=""><img src="images/linkedin.png" alt="linkedin" ></a></li>
-            <li><a href=""><img src="images/twitter.png" alt="twitter" ></a></li>
-        </ul>
+        <div>
+            <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+            <a href="#"><i class="fab fa-twitter pl-3 text-white"></i></a>
+        </div>
     </footer>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+  
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+  
+        function checkWindowSize() {
+          if (window.innerWidth >= 768) {
+            menu.classList.add("hidden");
+          }
+        }
+  
+        window.addEventListener("resize", checkWindowSize);
+  
+        window.addEventListener("load", checkWindowSize);
+      </script>
+
 </body>
+
 </html>
+
